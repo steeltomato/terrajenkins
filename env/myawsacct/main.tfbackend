@@ -1,0 +1,3 @@
+bucket = "myawsacct-terraform-state"
+key    = "jenkins"
+region = "us-east-1"
