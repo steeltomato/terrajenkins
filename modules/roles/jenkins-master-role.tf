@@ -26,7 +26,8 @@ data "aws_iam_policy_document" "jenkins_master_role_policy_document" {
       "ecs:RunTask",
       "ecs:StopTask",
       "ecs:ListContainerInstances",
-      "ecs:DescribeTasks"
+      "ecs:DescribeTasks",
+      "ecs:DeregisterTaskDefinition"
     ]
     resources = ["*"]
   }

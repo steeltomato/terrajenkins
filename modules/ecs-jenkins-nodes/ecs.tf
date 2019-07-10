@@ -31,9 +31,9 @@ resource "aws_launch_template" "jenkins_nodes_launch_template" {
   }
 
   block_device_mappings {
-    device_name = "xvdb"
+    device_name = "/dev/xvdcz"
     ebs {
-      volume_type           = "standard"
+      volume_type           = "gp2"
       volume_size           = 100 // 100 GB, intentionally large due to docker image/container cache
       delete_on_termination = true
     }
